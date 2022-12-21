@@ -9,6 +9,9 @@ public class Main {
         task3(cat, dog, paper);
         task4();
         task5();
+        task6();
+        task7();
+        task8();
     }
     public static void task1 (double cat, double dog, int paper) {
         System.out.println("Задача 1");
@@ -58,6 +61,35 @@ public class Main {
         System.out.println("frog = " + frog);
         frog = frog + 4;
         System.out.println("frog = " + frog);
+        System.out.println();
+    }
+
+    public static void task6 () {
+        System.out.println("Задача 6");
+        var boxerOneWeight = 78.2;
+        var boxerTwoWeight = 82.7;
+        System.out.println("Общий вес двух бойцов: " + (boxerOneWeight + boxerTwoWeight));
+        System.out.println("Разница между весами двух бойцов: " + (boxerOneWeight - boxerTwoWeight));
+        System.out.println();
+    }
+
+    public static void task7 () {
+        System.out.println("Задача 7");
+        var boxerOneWeight = 78.2;
+        var boxerTwoWeight = 82.7;
+        System.out.println("Разница весов спортсменов: " + (boxerTwoWeight - boxerOneWeight));
+        System.out.println("Остаток от деления большего на меньшее: " + (boxerTwoWeight%boxerOneWeight));
+        System.out.println();
+    }
+
+    public static void task8 () {
+        System.out.println("Задача 8");
+        var сommonWorkHours = 640;
+        var employeeCount = сommonWorkHours/8;
+        System.out.println("Всего работников в компании — " + employeeCount + " человек");
+        employeeCount = employeeCount + 94;
+        сommonWorkHours = employeeCount*8;
+        System.out.println("Если в компании работает " + employeeCount + " человек, то всего " + сommonWorkHours + " часа работы может быть поделено между сотрудниками");
         System.out.println();
     }
 
