@@ -14,6 +14,9 @@ public class Main {
         task8();
     }
     public static void task1 (double cat, double dog, int paper) {
+        Main.cat = cat;
+        Main.dog = dog;
+        Main.paper = paper;
         System.out.println("Задача 1");
         System.out.println("dog = " + dog);
         System.out.println("cat = " + cat);
@@ -22,6 +25,9 @@ public class Main {
     }
 
     public static void task2 (double cat, double dog, int paper) {
+        Main.cat = cat;
+        Main.dog = dog;
+        Main.paper = paper;
         System.out.println("Задача 2");
         var n = 4;
         dog = dog + n;
@@ -34,6 +40,9 @@ public class Main {
     }
 
     public static void task3 (double cat, double dog, int paper) {
+        Main.cat = cat;
+        Main.dog = dog;
+        Main.paper = paper;
         System.out.println("Задача 3");
         System.out.println("dog = " + dog);
         System.out.println("cat = " + cat);
