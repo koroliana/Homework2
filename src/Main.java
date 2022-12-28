@@ -12,6 +12,12 @@ public class Main {
         task6();
         task7();
         task8();
+
+        task11();
+        task12();
+        task13();
+        task14();
+
     }
     public static void task1 (double cat, double dog, int paper) {
         Main.cat = cat;
@@ -101,6 +107,70 @@ public class Main {
         System.out.println("Если в компании работает " + employeeCount + " человек, то всего " + сommonWorkHours + " часа работы может быть поделено между сотрудниками");
         System.out.println();
     }
+
+    public static void task11 () {
+        System.out.println("Задача 1 из 2 части Переменных");
+        int numberInt = 145000;
+        byte numberByte = 8;
+        short numberShort = 32000;
+        long  numberLong = 118000000;
+        float numberFloat = 15.9F;
+        double numberDouble = 148200.04321;
+        System.out.println("Значение переменной numberInt с типом int равно " + numberInt );
+        System.out.println("Значение переменной numberByte с типом byte равно " + numberByte );
+        System.out.println("Значение переменной numberShort с типом short равно " + numberShort );
+        System.out.println("Значение переменной numberLong с типом long равно " + numberLong );
+        System.out.println("Значение переменной numberFloat с типом float равно " + numberFloat );
+        System.out.println("Значение переменной numberDouble с типом double равно " + numberDouble );
+        System.out.println();
+    }
+
+    public static void task12 () {
+        System.out.println("Задача 2 из 2 части Переменных");
+        double a = 27.12;
+        long b = 987678965549L;
+        float c = 2.786F;
+        short d = 569;
+        short e = -159;
+        int f = 27897;
+        byte g = 67;
+        System.out.println("double a = " + a);
+        System.out.println("long b = " + b);
+        System.out.println("float c = " + c);
+        System.out.println("short d = " + d);
+        System.out.println("short e = " + e);
+        System.out.println("double f = " + f);
+        System.out.println("byte g = " + g);
+        System.out.println();
+    }
+
+    public static void task13 () {
+        System.out.println("Задача 3 из 2 части Переменных");
+        byte firstClass = 23;
+        byte secondClass = 27;
+        byte thirdClass = 30;
+        short lists = 480;
+        int result = lists / (firstClass + secondClass + thirdClass);
+        System.out.println("На каждого ученика рассчитано " + result + " листов бумаги");
+
+        System.out.println();
+    }
+
+    public static void task14 () {
+        System.out.println("Задача 4 из 2 части Переменных");
+        byte machinePerformance = 16/2;
+        byte firstPeriod = 20;
+        short secondPeriod = 60*24;
+        int thirdPeriod = secondPeriod*3;
+        int fourthPeriod = thirdPeriod*10;
+        System.out.println("За " + firstPeriod + " минут машина произвела " + machinePerformance*firstPeriod + " штук бутылок");
+        System.out.println("За " + secondPeriod + " минут машина произвела " + machinePerformance*secondPeriod + " штук бутылок");
+        System.out.println("За " + thirdPeriod + " минут машина произвела " + machinePerformance*thirdPeriod + " штук бутылок");
+        System.out.println("За " + fourthPeriod + " минут машина произвела " + machinePerformance*fourthPeriod + " штук бутылок");
+        System.out.println();
+    }
+
+
 
 
 }
