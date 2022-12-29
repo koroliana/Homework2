@@ -17,6 +17,10 @@ public class Main {
         task12();
         task13();
         task14();
+        task15();
+        task16();
+        task17();
+        task18();
 
     }
     public static void task1 (double cat, double dog, int paper) {
@@ -168,6 +172,66 @@ public class Main {
         System.out.println("За " + thirdPeriod + " минут машина произвела " + machinePerformance*thirdPeriod + " штук бутылок");
         System.out.println("За " + fourthPeriod + " минут машина произвела " + machinePerformance*fourthPeriod + " штук бутылок");
         System.out.println();
+    }
+
+    public static void task15 () {
+        System.out.println("Задача 5 из 2 части Переменных");
+        byte paintCans = 120;
+        int classroomNumber = paintCans / 6 ;
+        int whiteCans, brownCans;
+        whiteCans = classroomNumber*2;
+        brownCans = classroomNumber*4;
+        System.out.println("В школе, где " + classroomNumber + " классов, нужно " + whiteCans + " банок белой краски и " + brownCans + " банок коричневой краски");
+        System.out.println();
+    }
+
+    public static void task16 () {
+        System.out.println("Задача 6 из 2 части Переменных");
+        byte bananaWeignt = 80;
+        byte milkHundredMl = 105;
+        byte iceCreamWeight = 100;
+        byte eggWeight = 70;
+        int breakfastWeight = 5*bananaWeignt + 2*milkHundredMl + 2*iceCreamWeight + 4*eggWeight;
+        float breakfastWeightKilo = breakfastWeight / 1000F ;
+        System.out.println("Спортзавтрак весит " + breakfastWeight + " граммов или " + breakfastWeightKilo + " килограмма");
+        System.out.println();
+    }
+
+    public static void task17 () {
+        System.out.println("Задача 7 из 2 части Переменных");
+        byte weightAimKilo = 7;
+        int dayCountSlow = weightAimKilo*1000/250;
+        int dayCountFast = weightAimKilo*1000/500;
+        int dayCountAverage = (dayCountSlow+dayCountFast)/2;
+        System.out.println("Чтобы сбросить " + weightAimKilo + "кг, спортсмену потребуется в среднем " + dayCountAverage +" дней. Если он будет сбрасывать по 250г в день, то потребуется " + dayCountSlow + " дней, а если по 500г, то "+ dayCountFast +" дней.");
+        System.out.println();
+    }
+
+    public static void task18 () {
+        System.out.println("Задача 8 из 2 части Переменных");
+        int lastYearMashaSalary = 67760;
+        int lastYearDenisSalary = 83690;
+        int lastYearKristinaSalary = 76230;
+        int newMashaSalary = increase(lastYearMashaSalary);
+        int newDenisSalary = increase(lastYearDenisSalary);
+        int newKristinaSalary = increase(lastYearKristinaSalary);
+        int annualMashDifference = difference(newMashaSalary, lastYearMashaSalary);
+        int annualDenisDifference = difference(newDenisSalary, lastYearDenisSalary);
+        int annualKristinaDifference = difference(newKristinaSalary, lastYearKristinaSalary);
+        System.out.println("В новом году Маша будет получать "+ newMashaSalary +" рублей в месяц. Годовой рост дохода составит " + annualMashDifference +" рублей");
+        System.out.println("В новом году Денис будет получать "+ newDenisSalary +" рублей в месяц. Годовой рост дохода составит " + annualDenisDifference + " рублей");
+        System.out.println("В новом году Кристина будет получать " + newKristinaSalary +" рублей в месяц. Годовой рост дохода составит " + annualKristinaDifference +" рублей");
+        System.out.println();
+    }
+
+    public static int increase (int salary) {
+        salary = salary + salary/10;
+        return salary;
+    }
+
+    public static int difference (int newSalary, int lastSalary) {
+        int annualDifference =  newSalary*12 - lastSalary*12;
+        return annualDifference;
     }
 
 
